@@ -14,6 +14,8 @@ A template implementation of a MCP Hello World Python.
   ```bash
     bl login YOUR-WORKSPACE
   ```
+  
+- Optional - **NodeJS:** 20.11.0 or later. We use a npm package for the hot reload feature "bl serve --hotrealod".
 
 ## Installation
 
