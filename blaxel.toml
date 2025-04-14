@@ -2,5 +2,5 @@ name = "mcp-helloworld-python"
 type = "function"
 
 [entrypoint]
-prod = "python src/server.py"
+prod = ".venv/bin/python3 src/server.py"
 dev = "npx nodemon --exec uv run python src/server.py"
