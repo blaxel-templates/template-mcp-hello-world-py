@@ -8,13 +8,13 @@ A template implementation of a MCP Hello World Python.
 - **[UV](https://github.com/astral-sh/uv):** An extremely fast Python package and project manager, written in Rust.
 - **[Blaxel CLI](https://docs.blaxel.ai/Get-started):** Ensure you have the Blaxel CLI installed. If not, install it globally:
   ```bash
-  curl -fsSL https://raw.githubusercontent.com/beamlit/toolkit/main/install.sh | BINDIR=$HOME/.local/bin sh
+  curl -fsSL https://raw.githubusercontent.com/blaxel-ai/toolkit/main/install.sh | BINDIR=$HOME/.local/bin sh
   ```
 - **Blaxel login:** Login to Blaxel platform
   ```bash
     bl login YOUR-WORKSPACE
   ```
-  
+
 - Optional - **NodeJS:** 20.11.0 or later. We use a npm package for the hot reload feature "bl serve --hotrealod".
 
 ## Installation
@@ -22,7 +22,7 @@ A template implementation of a MCP Hello World Python.
 - **Clone the repository and install the dependencies**:
 
   ```bash
-  git clone https://github.com/beamlit/template-mcp-helloworld-python.git
+  git clone https://github.com/blaxel-ai/template-mcp-helloworld-python.git
   cd template-mcp-helloworld-python
   uv sync
   ```
