@@ -1,11 +1,26 @@
-from blaxel import env
-from blaxel.mcp.server import FastMCP
-
-from typing import Annotated
 from logging import getLogger
+from typing import Annotated
+
+from blaxel import env
+from blaxel.core.mcp.server import FastMCP
 
 mcp = FastMCP("mcp-helloworld-python")
 logger = getLogger(__name__)
+
+
+# Add an addition tool
+@mcp.tool()
+def add(a: int, b: int) -> int:
+    """Add two numbers"""
+    return a + b
+
+
+# Add a dynamic greeting resource
+@mcp.resource("greeting://{name}")
+def get_greeting(name: str) -> str:
+    """Get a personalized greeting"""
+    return f"Hello, {name}!"
+
 
 @mcp.tool()
 def hello_world(
@@ -16,6 +31,7 @@ def hello_world(
 ) -> str:
     """Say hello to the user"""
     return f"Hello {first_name}!"
+
 
 if not env["BL_DEBUG"]:
     mcp.run(transport="ws")

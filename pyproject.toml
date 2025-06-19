@@ -4,4 +4,8 @@ version = "0.1.0"
 description = ""
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["blaxel==0.1.21", "fastmcp>=0.4.1", "mcp[cli]>=1.6.0"]
+dependencies = [
+  "blaxel[core,telemetry]==0.2.0rc2",
+  "fastmcp>=0.4.1",
+  "mcp[cli]>=1.6.0",
+]
