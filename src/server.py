@@ -24,13 +24,13 @@ def get_greeting(name: str) -> str:
 
 @mcp.tool()
 def hello_world(
-    first_name: Annotated[
+    firstname: Annotated[
         str,
         "First name of the user",
     ],
 ) -> str:
     """Say hello to the user"""
-    return f"Hello {first_name}!"
+    return f"Hello {firstname}!"
 
 
 if not env["BL_DEBUG"]:
