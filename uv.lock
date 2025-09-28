@@ -862,7 +862,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "blaxel", extras = ["core", "telemetry"], specifier = "==0.2.15" },
+    { name = "blaxel", extras = ["core", "telemetry"], specifier = "==0.2.19" },
     { name = "fastmcp", specifier = ">=0.4.1" },
     { name = "mcp", extras = ["cli"], specifier = ">=1.6.0" },
 ]
